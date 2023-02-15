@@ -1,4 +1,3 @@
-Youtube URL : https://www.youtube.com/watch?v=yKV1IGahXqA
 
 # Getting Started with Create React App
 
