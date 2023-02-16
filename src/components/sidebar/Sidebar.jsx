@@ -11,31 +11,40 @@ import EventNoteIcon from '@mui/icons-material/EventNote';
 import SettingsApplicationsIcon from '@mui/icons-material/SettingsApplications';
 import ContactPageIcon from '@mui/icons-material/ContactPage';
 import LogoutIcon from '@mui/icons-material/Logout';
+import { Link } from "react-router-dom";
 
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="top">
+        <Link to="/" style={{textDecoration:"none"}}>          
           <span className="logo">Logo Admin</span>
+        </Link>
       </div>
       <hr />
       <div className="center">
         <ul>
           <p className="title">MAIN</p>
-          <li>
-            <DashboardIcon className="icon" />
-            <span>Dashboard</span>
-          </li>
+          <Link to="/" style={{textDecoration:"none"}}>      
+            <li>
+              <DashboardIcon className="icon" />
+              <span>Dashboard</span>
+            </li>
+          </Link>
           <p className="title">LISTS</p>
-          <li>
-            <PersonOutlineOutlinedIcon className="icon" />
-            <span>Users</span>
-          </li>
-          <li>
-            <Inventory2Icon className="icon" />
-            <span>Products</span>
-          </li>
+          <Link to="/users" style={{textDecoration:"none"}}>  
+            <li>
+              <PersonOutlineOutlinedIcon className="icon" />
+              <span>Users</span>
+            </li>
+          </Link>
+          <Link to="/products" style={{textDecoration:"none"}}>  
+            <li>
+              <Inventory2Icon className="icon" />
+              <span>Products</span>
+            </li>
+          </Link>
           <li>
             <CreditCardIcon className="icon" />
             <span>Order</span>
